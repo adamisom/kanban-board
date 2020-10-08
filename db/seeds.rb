@@ -9,4 +9,20 @@
 Board.destroy_all
 
 board1 = Board.create({title: "First board"})
-board2 = Board.create({title: "Second board"})
+list1 = List.create({title: "List 1"})
+list2 = List.create({title: "List 2"})
+card1 = Card.create({title: "Card 1", description: "Card Description 1"})
+card2 = Card.create({title: "Card 2", description: "Card Description 2"})
+card3 = Card.create({title: "Card 3", description: "Card Description 3"})
+card4 = Card.create({title: "Card 4", description: "Card Description 4"})
+card5 = Card.create({title: "Card 5", description: "Card Description 5"})
+
+board1.lists << list1
+board1.lists << list2
+list1.cards << card1
+list1.cards << card2
+list2.cards << card3
+list2.cards << card4
+list2.cards << card5
+
+# board2 = Board.create({title: "Second board"})
