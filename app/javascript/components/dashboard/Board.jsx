@@ -1,5 +1,5 @@
 import React from "react";
-import ListContainer from "./ListContainer";
+import ListListingContainer from "./ListListingContainer";
 
 class Board extends React.Component {
   componentDidMount() {
@@ -23,7 +23,7 @@ class Board extends React.Component {
               <i className="sub-icon sm-icon"></i>Subscribed
             </div>
           </header>
-          <ListContainer />
+          <ListListingContainer />
         </div>
       );
     } else {

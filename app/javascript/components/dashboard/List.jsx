@@ -1,14 +1,14 @@
-import React from "react"
-import CardContainer from "./CardContainer"
+import React from "react";
+import CardContainer from "./CardContainer";
 
-function List() {
+function List({ list }) {
   return (
     <div className="list-wrapper">
       <div className="list-background">
         <div className="list">
           <a className="more-icon sm-icon" href=""></a>
           <div>
-            <p className="list-title">Stuff to try (this is a list)</p>
+            <p className="list-title">{list.title}</p>
           </div>
           <div className="add-dropdown add-top">
             <div className="card"></div>
@@ -18,7 +18,7 @@ function List() {
               <span>...</span>
             </div>
           </div>
-          <CardContainer />
+          <CardContainer id={list.id} />
           <div className="add-dropdown add-bottom">
             <div className="card">
               <div className="card-info"></div>
@@ -37,7 +37,7 @@ function List() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default List
+export default List;

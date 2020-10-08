@@ -1,18 +1,18 @@
-import React from "react"
+import React from "react";
 
-function Card() {
+function Card({ card }) {
   return (
     <div className="card-background">
       <div className="card ">
         <i className="edit-toggle edit-icon sm-icon"></i>
         <div className="cover-image"></div>
         <div className="card-info">
-          <p>Use the + in the top menu to make your first board now.</p>
+          <p>{card.title}</p>
         </div>
         <div className="card-icons"></div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Card
+export default Card;
